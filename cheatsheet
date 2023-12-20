@@ -3,7 +3,7 @@
 const gifIdList = ["WuGSL4LFUMQU", "HuVCpmfKheI2Q", "u6uAu3yyDNqRq", "13HgwGsXF0aiGY"];
 
 const giphy = require('giphy-api')({
-  apiKey: 'KsltJNEs1v3QDDVlinP6EFo2GqjFxgRR',
+  apiKey: 'XsVa6qXQohZ6qDGXWz6ouTvpBLXbY72Q',
   https: true
 });
 

@@ -1,8 +1,11 @@
 import React from 'react';
 
-function SearchBar(props) {
+function SearchBar({ fetchGiphy }) {
+  function handleChange(event) {
+    fetchGiphy(event.currentTarget.value);
+  }
   return (
-    <input type="text" className="form-search form-control" />
+    <input type="text" className="form-search form-control" onChange={handleChange} />
   );
 }
 
