@@ -10,7 +10,7 @@ const giphy = require('giphy-api')({
 
 function App(props) {
   const [selectedId, setSelectedId] = React.useState("13HgwGsXF0aiGY");
-  const [gifIds, setGifIds] = React.useState(["WuGSL4LFUMQU", "HuVCpmfKheI2Q", "u6uAu3yyDNqRq"]);
+  const [gifIds, setGifIds] = React.useState(["WuGSL4LFUMQU", "HuVCpmfKheI2Q", "u6uAu3yyDNqRq", "13HgwGsXF0aiGY", "13UZisxBxkjPwI", "gG6OcTSRWaSis", "LmNwrBhejkK9EFP504"]);
   // ReactuseState gives us array with two values
   // Instead of storing variable we distructure and give first value of array to selectedId
   // Second value we give to setSelectedGid

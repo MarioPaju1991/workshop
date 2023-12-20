@@ -22,25 +22,31 @@ body {
   position: sticky;
   display: flex;
   flex-direction: column;
+  background-color: white;
 
   .form-search {
-    padding: 60px 60px 60px 120px;
-    border: none;
-    font-size: 2.6em;
-    box-shadow: none;
+    padding: 30px;
+    margin: 5px -10px 5px;
+    border: 2px solid #ccc;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px lightgrey;
+
     &:focus {
-      box-shadow: none;
+      outline: none;
+      border-color: #007bff;
     }
   }
 
   &:before {
     content: '\F002';
     position: absolute;
-    top: 35px;
-    left: 60px;
+    top: 8px;
+    left: 4px;
     font-family: FontAwesome;
-    font-size: 2.6em;
-    opacity: 0.4;
+    font-size: 1.2em;
+    color: #555;
   }
 
   .selected-gif {
@@ -48,7 +54,11 @@ body {
     display: flex;
     flex-grow: 1;
     height: calc(100vh - 232px);
-    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.22'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: #273d37;
+    background: linear-gradient(0deg, #219778 0%, #d8e1f5 100%);
+    border-radius: 5%;
+    margin: 20px;
+
 
     .gif {
       max-width: 80%;
@@ -60,7 +70,7 @@ body {
 
 .right-scene {
   flex: 0 0 40%;
-  background-color: #1b434d;
+  background-color: #eff2f3;
   overflow: scroll;
 
   .gif-list {
